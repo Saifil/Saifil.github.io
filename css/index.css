@@ -2,11 +2,11 @@
 =============
 Color Schemes
 =============
-Tech Black: 231f20
-Tech Gold: b3a369
-Tech Blue: 003057
+Tech Black: #231f20
+Tech Gold: #b3a369
+Tech Blue: #003057
 
-White: f7fcfe
+White: #f7fcfe
 */
 
 body {
@@ -25,17 +25,19 @@ body {
 .nav-link, .nav-item {
     color: #f7fcfe;
     font-family: 'IBM Plex Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 1.25rem;
     text-decoration: none;
 }
 .nav-item a.nav-link:hover {
     color: #b3a369; 
 }
+
 .active {
     float: left;
-    border-bottom: 0.08rem solid #fff;
+    border-bottom: 0.1rem solid #b3a369;
     padding-bottom: 0.2px;
-    color: #b3a369;
+    /* color: #b3a369; */
 }
 .fa-bars {
     color: #f7fcfe;
