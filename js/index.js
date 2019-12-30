@@ -63,12 +63,15 @@ $(function () {
 // Scroll active link change
 $(window).scroll(function() {
   var scrollDistance = $(window).scrollTop();
-
+  // console.log($(".navbar").height());
   // Assign active class to nav links while scolling
   $('.page-section').each(function(i) {
-      if ($(this).position().top <= scrollDistance) {
+      if ($(this).position().top - $(".navbar").height() <= scrollDistance) {
           $('#navbarSupportedContent ul li a.active').removeClass('active');
           $('#navbarSupportedContent ul li a').eq(i).addClass('active');
       }
   });
 }).scroll();
+
+// Full page section height
+$(".page-section").css("min-height", $(window).height() );

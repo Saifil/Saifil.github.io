@@ -7,16 +7,29 @@ Tech Gold: #b3a369
 Tech Blue: #003057
 
 White: #f7fcfe
+
+Navbar-height: 
 */
 
-body {
-    background-color: #100e17;
+:root {
+    --navbar-height: 75px;
 }
+
+body {
+    background-color: #110f17;
+    font-family: 'Roboto', sans-serif;
+    color: #f7fcfe;
+    font-size: 1rem;
+}
+
+.start-section {
+    margin-top: var(--navbar-height);
+} 
 
 /* Navigation */
 .navbar {
-    background-color: #100e17;
-    min-height: 65px;
+    background-color: #110f17;
+    min-height: var(--navbar-height);
 }
 .navbar.scrolled {
     background-color: #1d1d24 !important;
@@ -24,9 +37,9 @@ body {
 }
 .nav-link, .nav-item {
     color: #f7fcfe;
-    font-family: 'IBM Plex Sans', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
-    font-size: 1.25rem;
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 .nav-item a.nav-link:hover {
@@ -36,9 +49,31 @@ body {
 .active {
     float: left;
     border-bottom: 0.1rem solid #b3a369;
-    padding-bottom: 0.2px;
+    padding-bottom: 0.4rem;
     /* color: #b3a369; */
 }
 .fa-bars {
     color: #f7fcfe;
+}
+
+/* Profile Photo */
+.img-circle {
+    border-radius: 50%;
+    border: 2rem solid #0b0a10; 
+    padding: 0.25rem; background:#b3a369;
+}
+
+/* Typography */
+.title {
+    /* font-size: 4rem; */
+    /* font-size: calc(16px + 0.5vw); */
+    font-size: calc(1.5rem + 2vw);
+    /* margin: .5em; */
+    font-weight: bolder;
+}
+.sub-title {
+    font-size: calc(0.75rem + 1vw);
+}
+.text-content {
+    font-size: calc(0.75rem + 0.5vw);
 }
