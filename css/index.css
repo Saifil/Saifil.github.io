@@ -11,6 +11,10 @@ White: #f7fcfe
 Navbar-height: 
 */
 
+html, body {
+    height: 100%;
+}
+
 :root {
     --navbar-height: 75px;
 }
@@ -22,9 +26,9 @@ body {
     font-size: 1rem;
 }
 
-.start-section {
+/* .start-section {
     margin-top: var(--navbar-height);
-} 
+}  */
 
 /* Navigation */
 .navbar {
@@ -59,7 +63,7 @@ body {
 /* Profile Photo */
 .img-circle {
     border-radius: 50%;
-    border: 2rem solid #0b0a10; 
+    border: 2rem solid #030304; 
     padding: 0.25rem; background:#b3a369;
 }
 
@@ -75,5 +79,45 @@ body {
     font-size: calc(0.75rem + 1vw);
 }
 .text-content {
-    font-size: calc(0.75rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
+    color: #e8e8e8;
+}
+@media screen and (max-width: 48em){
+    /* .title, .sub-title, .text-content, .converse-bubble {
+        text-align: center;
+    } */
+    .about-content {
+        text-align: center;
+    }
+    .start-section {
+    margin-top: var(--navbar-height);
+    } 
+
+}
+
+/*About Icons*/
+.fa-linkedin, .fa-github {
+    color: #ffffff;
+}
+.fa-envelope:hover, .fa-linkedin:hover, .fa-github:hover {
+    color: #b3a369;
+}
+
+.converse-bubble {
+    border-color: #b3a369;
+    border-style: solid;
+    border-radius: 1rem 1rem 1rem 0;
+    background-color: #b3a369;
+    font-size: 0.9rem;
+}
+
+/* Download Button */
+.download-btn {
+    background-color: #b3a369;
+    color: #f7fcfe;
+    border-radius: 1.2rem;
+}
+.download-btn:hover {
+    background-color: #f7fcfe;
+    color: #110f17;
 }

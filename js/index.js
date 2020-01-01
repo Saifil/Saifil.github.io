@@ -74,4 +74,6 @@ $(window).scroll(function() {
 }).scroll();
 
 // Full page section height
-$(".page-section").css("min-height", $(window).height() );
+// $(".page-section").css("min-height", $(window).height());
+// $(".start-section").css("min-height", $(window).height() - $(".navbar").height());
+// $(".start-section").css("max-height", $(".start-section").height() - $(".navbar").height());
