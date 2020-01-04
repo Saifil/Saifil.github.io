@@ -62,11 +62,13 @@ body {
 .img-circle {
     border-radius: 50%;
     border: 2rem solid #030304; 
-    padding: 0.25rem; background: var(--color-secondary);
+    padding: 0.25rem; 
+    background: var(--color-secondary);
 }
 .img-small {
-    border: 1rem solid #030304; 
-    padding: 0.1rem; background:#ffffff;
+    border: 1px solid var(--color-secondary); 
+    padding: 0.1rem; 
+    background:#ffffff;
 }
 
 /* Typography */
@@ -150,10 +152,16 @@ body {
     background-color: #f7fcfe;
     color: var(--color-primary-dark);
 }
+.read-more-btn {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+    background-color: var(--color-primary-dark);
+    border-radius: 1.2rem;
+}
 
 /* Box color */
 .bg-box {
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
 }
 .bg-secondary-custom {
     color: #b3a369;
@@ -182,4 +190,8 @@ body {
 }
 .fa-check-circle {
     color: var(--color-secondary);
+}
+
+.bg-gold {
+    border-bottom: 1px solid #b3a369;
 }

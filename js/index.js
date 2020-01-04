@@ -12,6 +12,17 @@ $(document).ready(function () {
     $(".fas.fa-bars").toggleClass("fa-times");
   });
 
+  // Collapse Button
+  $("#collapseBtn").click(function () {
+    // console.log($(this).target);
+    var $txt = $("#read-more-text").text();
+    if ($txt === "read more") {
+      $("#read-more-text").html("read less");
+    } else {
+      $("#read-more-text").html("read more");
+    }
+  });
+
   // active nav-link color
   // $(".nav-item a").click(function () {
   //   $(this).addClass('active');
@@ -20,7 +31,6 @@ $(document).ready(function () {
   // });
 
 });
-
 // smooth scrolling
 $(function () {
   $('a[href*="#"]')
@@ -61,15 +71,15 @@ $(function () {
 });
 
 // Scroll active link change
-$(window).scroll(function() {
+$(window).scroll(function () {
   var scrollDistance = $(window).scrollTop();
   // console.log($(".navbar").height());
   // Assign active class to nav links while scolling
-  $('.page-section').each(function(i) {
-      if ($(this).position().top - $(".navbar").height() <= scrollDistance) {
-          $('#navbarSupportedContent ul li a.active').removeClass('active');
-          $('#navbarSupportedContent ul li a').eq(i).addClass('active');
-      }
+  $('.page-section').each(function (i) {
+    if ($(this).position().top - $(".navbar").height() <= scrollDistance) {
+      $('#navbarSupportedContent ul li a.active').removeClass('active');
+      $('#navbarSupportedContent ul li a').eq(i).addClass('active');
+    }
   });
 }).scroll();
 

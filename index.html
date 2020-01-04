@@ -19,11 +19,6 @@
 </head>
 
 <body>
-    <!-- 
-        ====================
-             Navigation
-        ====================
-    -->
     <div class="container-fluid body-main">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top row">
@@ -46,7 +41,7 @@
                         <a class="nav-link px-0 mr-4" href="#Skills">Skills</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-0 mr-4" href="#">Experience</a>
+                        <a class="nav-link px-0 mr-4" href="#Experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-0 mr-4" href="#">Projects</span></a>
@@ -99,8 +94,8 @@
             </div>
         </section>
         <!-- Education -->
-        <section class="page-section row nav-mg-top" id="Education">
-            <div class="container mx-auto">
+        <section class="page-section row" id="Education">
+            <div class="container mx-auto nav-mg-top">
                 <div class="row mb-4">
                     <section class="mx-auto headings">Education</section>
                 </div>
@@ -119,10 +114,13 @@
                             Analytics, Real Time Systems, Machine Learning for Trading </section>
                     </div>
                 </div>
+                <div class="row wow zoomIn">
+                    <hr class="bg-gold w-75">
+                </div>
                 <div class="row mb-3 p-3 bg-box wow fadeInUp">
                     <div class="col-sm-2 text-center my-auto">
                         <img src="./img/dj-logo-white-bg.jpg" class="img-fluid img-circle img-radius img-small p-1"
-                            alt="Responsive image" width="132px" height="132px">
+                            alt="Responsive image" width="115px" height="115px">
                     </div>
                     <div class="col-sm-10">
                         <section class="text-content my-2">2015 - 2019</section>
@@ -223,28 +221,96 @@
                 </div>
             </div>
         </section>
-    </div>
+        <!-- Experience -->
+        <section class="page-section row" id="Experience">
+            <div class="container mx-auto nav-mg-top">
+                <div class="row mb-4">
+                    <section class="mx-auto headings">Experience</section>
+                </div>
+                <div class="row mb-3 p-3 bg-box wow fadeInUp">
+                    <div class="col-sm-2 text-center my-auto">
+                        <img src="./img/gt-logo-gold-bg-white.png" class="img-fluid" alt="Responsive image"
+                            width="125px" height="125px">
+                    </div>
+                    <div class="col-sm-10">
+                        <section class="text-content my-2">Jan 2020 - Present</section>
+                        <section class="sub-sub-title bg-secondary-custom">Graduate Teaching Assistant
+                        </section>
+                        <section class="sub-sub-title">Georgia Institute of Technology, Atlanta</section>
+                        <section class="text-content mt-2 word-spacing">GTA for CSE6242, Data and Visual Analytics
+                        </section>
+                    </div>
+                </div>
+                <div class="row wow zoomIn">
+                    <hr class="bg-gold w-75">
+                </div>
+                <div class="row mb-3 p-3 bg-box wow fadeInUp">
+                    <div class="col-sm-2 text-center mt-3">
+                        <img src="./img/syg-logo.png" class="img-fluid img-circle img-radius img-small p-1 mb-2"
+                            alt="Responsive image" width="95px" height="95px">
+                    </div>
+                    <div class="col-sm-10">
+                        <section class="text-content my-2">June 2018 - August 2018</section>
+                        <section class="sub-sub-title bg-secondary-custom">Mobile Application Development Intern
+                        </section>
+                        <section class="sub-sub-title">S S Services, Hyderabad, India
+                            <br> <span class="text-content">S S Services is a leading insurance company that specializes
+                                in selling fast, fair and
+                                affordable vehicle insurance policies. <span>
+                        </section>
 
-    <!-- 
+                        <section class="text-content mt-2 word-spacing">
+                            <ul>
+                                <li>Developed an android application for analyzing and visualizing data that enabled
+                                    admin to make informed business decisions.</li>
+                                <section class="collapse" id="collapseExample">
+                                    <li>Designed and implemented relational database schema in SQL and handled HTTP
+                                        client
+                                        requests using Google Volley.</li>
+                                    <li>Optimized image compression using JAVA to reduce the image upload time to
+                                        one-tenth
+                                        of the original.</li>
+                                    <li>Enabled change-in-schedule approval request to admin using push notifications
+                                        using
+                                        Google’s Firebase Cloud Messaging.</li>
+                                    <li>Enhanced the user interaction in-app by implementing seamless UX, interactive
+                                        UX/UI
+                                        dashboard and multi-language support.</li>
+                                </section>
+                            </ul>
+                        </section>
+                        <section class="text-center">
+                            <button type="button text-content" class="btn read-more-btn px-3" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                                id="collapseBtn">
+                                <span id="read-more-text">read more</span><i class="fab fa-readme pl-2"></i></i>
+                            </button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
         ====================
                Scripts
         ====================
-    -->
-    <!-- jQuery -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/8e09a8b7fe.js" crossorigin="anonymous"></script>
-    <!-- WoW -->
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- Lottie -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- Custom -->
-    <script src="js/index.js"></script>
+        -->
+        <!-- jQuery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/8e09a8b7fe.js" crossorigin="anonymous"></script>
+        <!-- WoW -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <!-- Lottie -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!-- Custom -->
+        <script src="js/index.js"></script>
 </body>
 
 </html>
